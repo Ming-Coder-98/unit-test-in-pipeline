@@ -6,7 +6,7 @@ class TestHandlerCase(unittest.TestCase):
 
     def test_response(self):
         print("testing response.")
-        event={'Country':'SG'}
+        event={'Country':'CROATIA'}
         result = lambda_function.lambda_handler(event, None)
         print(result)
         self.assertEqual(result['statusCode'], 200)
